@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.side ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+.main {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+.rightSide{
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+}
