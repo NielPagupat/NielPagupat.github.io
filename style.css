@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
     
 }
 .bannerHeader{
@@ -9,7 +10,7 @@
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 .navBar{
     position: absolute;
@@ -33,78 +34,73 @@
     color: aliceblue;
     z-index: 4;
 }
-.Introduction{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.side{
+    z-index: 2;
+    flex: 20%;
+    padding: 20px;
+}
+.center{
+    text-align: center;
+    z-index: 2;
+    flex: 60%;
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+    .row, .center {   
+      flex-direction: column;
+    }
+}
+
+.profilePic{
     position: absolute;
-    top: 25%; left: 25%;
+    background-image: url(doge.png);
+    background-size: cover;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    aspect-ratio: 2/2;
+    width: 25%;
+    max-width: 235px;
+    min-width: 235px;
+    height: auto;
+}
+.bg{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 50%;
     height: 50%;
     background-color: black;
     opacity: 75%;
-    z-index: 2;
 }
-.title{
+.center h1{
     position: absolute;
-    top: 25%; left: 25%;
-    width: 50%;
-    height: 50%;
-    z-index: 2;
-}
-.title h1{
-    font-family: sans-serif;
-    font-size:xx-large;
-    padding-top: 20%;
-    width: 300;
-    height: 50;
-    color: aliceblue;
-    opacity: 100%;
-    text-align: center;
-}
-.title p{
-    font-family: sans-serif;
-    padding-top: 20px;
-    width: 300;
-    height: 200;
-    color: aliceblue;
-    opacity: 100%;
-    text-align: center;
-}
-.aboutMe{
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: black;
-    
-}
-.profilePic{
-    position: absolute;
-    background-image: url(doge.png);
-    top: 0px;
+    top: 50%;
     left: 50%;
-    transform: translate(-150px, -150px);
-    height: 300px;
-    width: 300px;
-    
-    z-index: 3;
+    transform: translate(-50%, 0);
+    color: aliceblue;
 }
-.aboutMe h1{
+.center p{
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
-    transform: translate(-200px, -25px);
-    width: 400px;
-    height: 50px;
+    transform: translate(-50%, 0);
     color: aliceblue;
     text-align: center;
 }
+
 .button{
     position: absolute;
-    top: 400px;
+    top: 75%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
@@ -112,7 +108,11 @@
     color: white;
     border: none;
 }
-.button:hover{
-    background-color: #4CAF50;
-    color: white;
+.button a{
+    text-decoration: none;
+    color: greenyellow;
+    text-align: center;
+}
+.button a:hover{
+    color: blueviolet;
 }
