@@ -25,6 +25,19 @@
     background-color: #f1f1f1;
     padding: 20px;
 }
+.navbar{
+    display: flex;
+    justify-content: end;
+}
+.navbar ul li{
+    list-style-type: none ;
+    display: inline-block;
+    margin: 5px 40px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
 .fakeimg {
     background-color: #aaa;
     width: 100%;
