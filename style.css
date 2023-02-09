@@ -59,7 +59,7 @@
 .profilePic{
     position: absolute;
     background-image: url(pic.jpg);
-    border-radius: 50%git;
+    border-radius: 50%;
     background-size: cover;
     top: 15%;
     left: 50%;
