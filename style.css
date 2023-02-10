@@ -34,25 +34,13 @@ body{
 .navBar ul li a:hover{
     color: aqua;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 2;
-}
-.side{
-    z-index: 2;
-    flex: 20%;
-    padding: 20px;
-}
+
 .center{
     text-align: center;
-    z-index: 2;
-    flex: 60%;
-    padding: 20px;
     justify-content: center;
 }
 @media screen and (max-width: 700px) {
-    .row, .center {   
+    .row {   
       flex-direction: column;
     }
 }
@@ -81,12 +69,19 @@ body{
     opacity: 75%;
 }
 .center h1{
+    margin-left: 50%;
+    width:50%;
+    transform: translate(-50%, 0);
     margin-top: 20px;
     position: relative;
     color: aliceblue;
     z-index: 2;
 }
 .center p{
+    flex: 50%;
+    margin-left: 50%;
+    width:50%;
+    transform: translate(-50%, 0);
     margin-top: 75px ;
     position: relative;
     color: aliceblue;
@@ -95,7 +90,7 @@ body{
 
 .button{
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
