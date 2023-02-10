@@ -58,14 +58,14 @@ body{
     height: auto;
 }
 .bg{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%, -50px);
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 50%;
     height: 50%;
-    background-color: black;
-    opacity: 75%;
+    background-image: url(home\ page.png);
 }
 .center h1{
     margin-left: 50%;
