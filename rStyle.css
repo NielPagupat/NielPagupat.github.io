@@ -7,6 +7,7 @@ body{
     background-image: url(newchill.gif);
     background-repeat: repeat-y;
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -86,18 +87,12 @@ body{
 }
 .navbar ul li a{
     text-decoration: none;
-    
     color: aliceblue;
 }
 .navbar ul li a:hover{
     color: aqua;
 }
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-    opacity: 50%;
-}
+
 .profilePic{
     border-radius: 50%;
     aspect-ratio: 2/2;
