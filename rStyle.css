@@ -69,8 +69,8 @@ body{
     
 }
 .navbar{
-    position: relative;
-    padding: 10px;
+    position: relative; 
+    width: 100%;
     display: flex;
     justify-content: end;
     z-index: 3;
